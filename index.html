@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FireChart: FHIR® tools in the browser</title>
+    <meta name="description" content="FireChart builds open tools for FHIR® data in the browser: FireChart Viewer, a FHIR® viewer with a patient summary, and the Bundle Visualizer, a FHIR® Bundle drawn as a graph. Open source, MPL-2.0." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://firechart.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="FireChart" />
+    <meta property="og:url" content="https://firechart.github.io/" />
+    <meta property="og:title" content="FireChart: FHIR® tools in the browser" />
+    <meta property="og:description" content="FireChart Viewer and the Bundle Visualizer: read any FHIR® server, see a patient summary, draw a Bundle as a graph, embed them in your application. Open source." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://firechart.github.io/viewer/img/og-viewer.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="The summary of a patient in FireChart Viewer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FireChart: FHIR® tools in the browser" />
+    <meta name="twitter:description" content="FireChart Viewer and the Bundle Visualizer: open-source FHIR® tools that run in the browser." />
+    <meta name="twitter:image" content="https://firechart.github.io/viewer/img/og-viewer.png" />
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FireChart",
+        "url": "https://firechart.github.io/",
+        "logo": "https://firechart.github.io/img/firechart-logo.svg",
+        "sameAs": ["https://github.com/firechart"]
+    }
+    </script>
+    <link rel="icon" href="img/firechart-logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+<header class="site-header">
+    <a class="brand" href="./"><img src="img/firechart-logo.svg" alt="FireChart" /></a>
+    <nav>
+        <a href="viewer/viewer.html">Viewer</a>
+        <a href="viewer/bundle.html">Bundle<span class="wide"> Visualizer</span></a>
+        <a href="viewer/developers.html">Embed</a>
+    </nav>
+    <a class="github" href="https://github.com/firechart">GitHub</a>
+</header>
+
+<main class="page">
+    <section class="hero">
+        <h1>FHIR® data you can read</h1>
+        <p>
+            FireChart makes tools for FHIR® data that run in the browser. They read a FHIR® server or a Bundle directly, keep no data of their
+            own and fit into your application with one script.
+        </p>
+        <div class="actions">
+            <a class="button primary" href="viewer/">FireChart Viewer</a>
+            <a class="button" href="https://github.com/firechart/viewer">Source on GitHub</a>
+        </div>
+    </section>
+
+    <section class="cards">
+        <article class="card">
+            <h2>Viewer</h2>
+            <p>Browse any FHIR® server: resource types, lists with FHIR® search, a record with its references, the summary of a patient.
+                SMART on FHIR sign-in.</p>
+            <div class="actions"><a class="button primary" href="viewer/viewer.html">Try it</a></div>
+        </article>
+        <article class="card">
+            <h2>Bundle Visualizer</h2>
+            <p>A FHIR® Bundle drawn as the graph of the references between its resources. Paste it, open a file or read a search with its
+                related resources.</p>
+            <div class="actions"><a class="button primary" href="viewer/bundle.html">Try it</a></div>
+        </article>
+        <article class="card">
+            <h2>Embed it</h2>
+            <p>One ES module puts the Viewer or the Visualizer into your page in a frame of its own. Plain HTML, React, Angular, Vue,
+                or a Blazor component.</p>
+            <div class="actions"><a class="button" href="viewer/developers.html">How to embed</a></div>
+        </article>
+        <article class="card">
+            <h2>FireChart Lite</h2>
+            <p>FHIR® specification packages on your device: profiles, value sets and search parameters, offline once installed.</p>
+            <div class="actions"><a class="button" href="https://lite.firechart.org/">Open Lite</a></div>
+        </article>
+    </section>
+
+    <p class="notice">
+        The demos read public test servers with synthetic data. Do not enter real patient data there. FHIR® is the registered trademark of HL7
+        and is used with the permission of HL7.
+    </p>
+</main>
+
+<footer class="site-footer">
+    <nav class="footer-links" aria-label="More">
+        <a href="https://github.com/firechart/viewer">FireChart Viewer on GitHub</a>
+        <a href="https://github.com/firechart/viewer/releases">Releases</a>
+        <a href="https://github.com/firechart/viewer/pkgs/container/viewer">Docker image</a>
+    </nav>
+    FireChart Viewer is open source under the <a href="https://github.com/firechart/viewer/blob/main/LICENSE">MPL-2.0</a>.
+</footer>
+</body>
+</html>

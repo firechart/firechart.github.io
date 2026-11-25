@@ -1,0 +1,11 @@
+# firechart.github.io: the site of the organization and, in /viewer/, FireChart Viewer. This file is the robots.txt of the whole host.
+# The frames of the Viewer are parts of other pages; the files of the application stay open, as a crawler that renders a page needs them.
+
+User-agent: *
+Allow: /
+Disallow: /viewer/embed
+Disallow: /viewer/embed-bundle
+Disallow: /viewer/smart/
+
+Sitemap: https://firechart.github.io/sitemap.xml
+Sitemap: https://firechart.github.io/viewer/sitemap.xml
